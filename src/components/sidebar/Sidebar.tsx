@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import {  CiLogout } from "react-icons/ci"
 import { SidebarItem } from "./SidebarItem"
-import { IoCalendar, IoCheckboxOutline, IoListOutline } from "react-icons/io5"
+import { IoAddCircleOutline, IoBaseballOutline, IoCalendar, IoCheckboxOutline, IoListOutline } from "react-icons/io5"
 
 const menuItem =[
   {
@@ -19,6 +19,16 @@ const menuItem =[
     icon : <IoListOutline />,
     title : 'Server Actions',
     path:'/dashboard/server-todos'
+  },
+  {
+    icon : <IoAddCircleOutline />,
+    title : 'Cookies ',
+    path:'/dashboard/cookies'
+  },
+  {
+    icon : <IoBaseballOutline />,
+    title : 'Products ',
+    path:'/dashboard/products'
   },
 ]
 export const Sidebar = () => {
